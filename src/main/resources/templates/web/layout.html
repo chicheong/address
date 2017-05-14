@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<div th:fragment="head">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+	      aria-expanded="false" aria-controls="navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+	
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Intranet <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu"><!-- style="background-color: #222222;color: #FFFFFF;" -->
+	            <li><a href="#" style="color: #9d9d9d;">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li class="divider"></li>
+	            <li class="dropdown-header">Nav header</li>
+	            <li><a href="#">Separated link</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>      
+	        <li><a href="./shopping">Shopping <span class="sr-only">(current)</span></a></li> <!--  class="active" -->
+	        <li><a href="#">About Us</a></li>
+	
+	      </ul>
+	      <!-- <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search" />
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form> -->
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">English <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="#">Chinese</a></li>
+	            <li><a href="#">English</a></li>
+	            <li><a href="#">Japanese</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#loginModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i></a><!-- style="color:#9D9D9D;" -->
+	        </li>
+			<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-user"></i></a><!-- style="color:#9D9D9D;" -->
+				<ul class="dropdown-menu" role="menu">
+		            <li>
+		            <div class="container-fluid">
+						<div class="row" style="min-width:350px">
+    						<div class="col-xs-5">
+    							<img src="../../static/img/temporary04.jpg" th:src="@{/img/temporary04.jpg}" height="120" width="120" />
+    						</div>
+    						<div class="col-xs-7">
+    							<div class="col-xs-12">
+    								<strong style="font-color:FFFFFF;">Kelvin Wong</strong>
+    							</div>
+    							<div class="col-xs-12">
+    								chicheong@gmail.com
+    							</div>
+    							<div class="col-xs-12">
+    								<a href="#">Account</a> - <a href="#">Privacy</a>
+    							</div>    		
+    							<div class="col-xs-12">
+    								<br />
+    							</div> 
+    							<div class="list-unstyled col-xs-12">
+    								<a class="btn btn-primary pull-left" href="#" role="button">View Profile</a>
+    							</div>    							    							
+    						</div>
+    					</div>
+    					<div class='row'>
+    						<hr style='border-color: #BEBEBE;border-width: 1px 0;' />
+    					</div>
+    					<div class="row">
+    						<div class="col-xs-12">
+    							<a class="btn btn-default pull-right" th:href="@{/logout}" href="/logout" role="button">Sign out</a>
+    						</div>
+    					</div>
+    				</div>
+		            </li>
+		        </ul>
+	        </li>	        
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</div>
+
+
+<!-- Website Profile
+================================================== -->
+<div th:fragment="website_profile">
+	<nav class="navbar navbar-default" style="height: 82px;">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+			<a class="navbar-brand" href="./" style="padding:0">
+				<img alt="Logo" src="../../static/img/temporary05.jpg" th:src="@{/img/temporary05.jpg}" height="80" width="160" />	
+			</a>      
+	    </div>
+	    <div id="bs-example-navbar-collapse-2" >
+	      <ul class="nav navbar-nav">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Intranet <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu"><!-- style="background-color: #222222;color: #FFFFFF;" -->
+	            <li><a href="#" style="color: #9d9d9d;">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li class="divider"></li>
+	            <li class="dropdown-header">Nav header</li>
+	            <li><a href="#">Separated link</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>      
+	        <li><a href="./shopping">Shopping <span class="sr-only">(current)</span></a></li> <!--  class="active" -->
+	        <li><a href="#">About Us</a></li>
+	
+	      </ul>
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search" />
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</div>
+
+
+
+<div th:fragment="left">
+    <div class="well list-unstyled col-xs-4">
+        <ul class="nav nav-list">
+            <li class="nav-header">Shortcut Functions</li>
+            <li><a href="http://www.gopivotal.com/">Pivotal, Inc</a></li>
+            <li><a href="http://www.springsource.org/spring-xd">Spring XD</a></li>
+            <li><a href="http://spring.io">Spring</a></li>
+            <li><a href="http://spring.io">Spring</a></li>
+            <li><a href="http://spring.io">Spring</a></li>
+            <li><a href="http://spring.io">Spring</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- footer -->
+<div th:fragment="foot">
+    <footer>
+    	<hr style='border-color: #5E5E5E;border-style: solid none;border-width: 2px 0;' />
+    	<p style='text-align:center'><a href="./construction" th:href="@{/construction}">About Us</a> &middot; 
+    	<a href="./construction" th:href="@{/construction}">Press</a> &middot; <a href="./construction" th:href="@{/construction}">Privacy Policy</a> &middot; 
+    	<a href="./construction" th:href="@{/construction}">FAQ</a> &middot; <a href="./construction" th:href="@{/construction}">Contact Us</a> &middot; 
+    	<a href="./construction" th:href="@{/construction}">Join Us</a> &middot; <a href="./construction" th:href="@{/construction}">Legal</a> &middot; 
+    	<a href="./construction" th:href="@{/construction}">Terms</a></p>
+    	<hr style='border-color: #CCCCCC;border-style: solid none;border-width: 1px 0;' />
+        <p style='text-align:center'>&copy; 2015 Wongs</p>
+    </footer>
+</div>
+
+<!-- back to top button -->
+<div th:fragment="backToTop">
+	<div id="top-link-block" class="hidden">
+	    <a href="#myCarousel" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+	        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+	    </a>
+	</div><!-- /top-link-block -->
+</div>
+
+
+<!--login modal-->
+<div th:fragment="login">
+	<div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	  <div class="modal-content">
+	      <div class="modal-header">
+	          <button id="loginModalCloseButton" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h2 class="text-center"><img src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle" /><br />Login</h2>
+	      </div>
+	      <div class="modal-body">
+	          <form class="form col-md-12 center-block" name="form" th:action="@{/login}" action="/login" method="POST">
+	            <div class="form-group">
+	              <input type="text" class="form-control input-lg" name="username" placeholder="Email/Username" />
+	            </div>
+	            <div class="form-group">
+	              <input type="password" class="form-control input-lg" name="password" placeholder="Password" />
+	            </div>
+	            <div class="form-group">
+	              <button class="btn btn-primary btn-lg btn-block" id="login">Sign In</button>
+	              <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span>
+	            </div>
+	          </form>
+	      </div>
+	      <div class="modal-footer">
+	          <div class="col-md-12">
+	          <button id="loginModalCancelButton" class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+			  </div>	
+	      </div>
+	  </div>
+	  </div>
+	</div>
+</div>	
+
+
+<!--about modal-->
+<div th:fragment="about">
+	<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	  <div class="modal-content">
+	      <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</button>
+	          <h2 class="text-center">About</h2>
+	      </div>
+	      <div class="modal-body">
+	          <div class="col-md-12 text-center">
+	            <a href="http://www.bootply.com/DwnjTNuvVt">This Bootstrap Template</a><br />was made with <i class="glyphicon glyphicon-heart"></i> by <a href="http://bootply.com/templates">Bootply</a>
+	            <br /><br />
+	            <a href="https://github.com/iatek/bootstrap-google-plus">GitHub Fork</a>
+	          </div>
+	      </div>
+	      <div class="modal-footer">
+	          <button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
+	      </div>
+	  </div>
+	  </div>
+	</div>
+</div>	
+
+
+</html>

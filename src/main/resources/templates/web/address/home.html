@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="Simplicity Itself"/>
+
+    <title>Address</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../static/css/bootstrap/bootstrap.min.css" th:href="@{/css/bootstrap/bootstrap.min.css}" rel="stylesheet" />
+    <!-- Not in use -->
+    <link href="../../static/css/bootstrap/bootstrap-theme.min.css" th:href="@{/css/bootstrap/bootstrap-theme.min.css}" rel="stylesheet" />
+    <!-- Site CSS -->
+    <link href="../../static/css/address.css" th:href="@{/css/address.css}" rel="stylesheet" />
+    
+    <!-- Easyui CSS -->
+    <link href="../../static/css/easyui/easyui.css" th:href="@{/css/easyui/easyui.css}" rel="stylesheet" />
+    <link href="../../static/css/easyui/icon.css" th:href="@{/css/easyui/icon.css}" rel="stylesheet" />
+    <link href="../../static/css/easyui/color.css" th:href="@{/css/easyui/color.css}" rel="stylesheet" />
+    <link href="../../static/css/easyui/demo.css" th:href="@{/css/easyui/demo.css}" rel="stylesheet" />
+    
+
+    
+    <!-- Customized stuffs go here -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../static/js/home/ie-emulation-modes-warning.js" th:src="@{/js/home/ie-emulation-modes-warning.js}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="../../static/css/bootstrap/carousel.css" th:href="@{/css/bootstrap/carousel.css}" rel="stylesheet" />
+    <link rel="icon" href="../../favicon.ico" th:ref="@{/favicon.ico}" />
+    
+    <style type="text/css">
+    	body { padding-top: 31px; }
+    </style>
+</head>
+<body>
+<!-- Navbar
+================================================= -->
+<div th:include="web/layout :: head"></div>
+<div th:include="web/layout :: website_profile"></div>
+
+<br />
+
+<div class="container-fluid">
+	<div class="row">
+	  <div class="col-md-1">photo listing</div>
+	  <div class="col-md-3">main photo</div>	
+	  <div class="col-md-5">product description</div>
+	  <div class="col-md-3">other</div>	
+	</div>
+	<div class="row">
+	  <div class="col-md-1">
+	  	<img src="../../static/img/product/01.jpg" th:src="@{/img/product/01.jpg}" alt="01" class="img-thumbnail" height="100" width="100" />
+	  	<img src="../../static/img/product/02.jpg" th:src="@{/img/product/02.jpg}" alt="01" class="img-thumbnail" height="100" width="100" />
+	  	<img src="../../static/img/product/03.jpg" th:src="@{/img/product/03.jpg}" alt="01" class="img-thumbnail" height="100" width="100" />
+	  	<img src="../../static/img/product/04.jpg" th:src="@{/img/product/04.jpg}" alt="01" class="img-thumbnail" height="100" width="100" />
+	  	<img src="../../static/img/product/05.jpg" th:src="@{/img/product/05.jpg}" alt="01" class="img-thumbnail" height="100" width="100" />
+	  	<img src="../../static/img/product/06.jpg" th:src="@{/img/product/06.jpg}" alt="01" class="img-thumbnail" height="100" width="100" />
+	  </div>
+	  <div class="col-md-3">
+	  	<img src="../../static/img/product/06.jpg" th:src="@{/img/product/06.jpg}" alt="01" class="img-rounded" height="250" width="250" />
+	  </div>	
+	  <div class="col-md-5">
+	  	<table>
+	  		<tr>
+	  			<td>DJI Phantom 3 Professional (Pro) 4K Video Camera EVERYTHING YOU NEED Kit + Extra 2 DJI Batteries + Snap on Guards + 2 64GB UHS-I/U3 SD Cards w/Reader + Carry System w/Harness + More(With LG Backpack)
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>by DJI
+	  			</td>
+	  		</tr>	  	
+	  		<tr>
+	  			<td>123 customer reviews  
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  				<table>
+				  		<tr>
+				  			<td>List Price:	$20.75
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td>Price:	$14.85 &amp; FREE Shipping on orders over $35. Details
+				  			</td>
+				  		</tr>	  
+				  		<tr>
+				  			<td>You Save:	$5.90 (28%)
+				  			</td>
+				  		</tr>
+	  				</table>
+	  			</td>
+	  		</tr>
+	  				
+	  		<tr>
+	  			<td>In stock/Pre-order/Out-of-order
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Estimated Delivery Date: Monday, Feb. 8 when you choose Two-Day Shipping at checkout.
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Ships from and sold by Koozam.
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Size: With Backpack
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Options
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Item Descrition
+	  			</td>
+	  		</tr>	  			  		  		
+
+	  	</table>
+	  </div>
+	  <div class="col-md-3">other</div>		
+	</div>
+	<div class="row">
+	</div>
+</div>
+
+
+
+
+<div>
+	<table id="address_list"></table>
+	<div id="toolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="append()">Append</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="removeit()">Remove</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true" onclick="accept()">Accept</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-undo',plain:true" onclick="reject()">Reject</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" onclick="getChanges()">GetChanges</a>
+	</div>
+</div>
+
+
+
+<!-- back to top button -->
+<div th:include="web/layout :: backToTop"></div>
+
+<!-- FOOTER -->
+<div th:include="web/layout :: foot"></div>
+
+<!-- LOGIN -->
+<div th:include="web/layout :: login"></div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../static/js/jquery/jquery-1.10.2.min.js" th:src="@{/js/jquery/jquery-1.10.2.min.js}" />
+<script src="../../static/js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}" />
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../static/js/home/vendor/holder.js" th:src="@{/js/home/vendor/holder.js}" />
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../static/js/home/ie10-viewport-bug-workaround.js" th:src="@{/js/home/ie10-viewport-bug-workaround.js}" />
+<!-- Easyui -->
+<script src="../../static/js/easyui/jquery.easyui.min.js" th:src="@{/js/easyui/jquery.easyui.min.js}" />
+<script src="../../static/js/easyui/datagrid-filter.js" th:src="@{/js/easyui/datagrid-filter.js}" />
+
+
+<!-- Site Script -->
+<script src="../../static/js/address.js" th:src="@{/js/address.js}" />
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var itemList = $('#address_list');
+var editIndex = undefined;
+function endEditing(){
+    if (editIndex == undefined){return true;}
+    if (itemList.datagrid('validateRow', editIndex)){
+        itemList.datagrid('endEdit', editIndex);
+        editIndex = undefined;
+        return true;
+    } else {
+    	alert('Please fill in the required fields');
+        return false;
+    }
+}
+function updateField(field, value, type){
+	//alert('thisfield: ' + thisfield + ' thisvalue: ' + thisvalue);
+    var ed = itemList.datagrid('getEditor', {index:editIndex,field:field});
+    if (ed != null){
+		if (type == 'combogrid'){
+    		$(ed.target).combogrid('setValue', value);
+    	} else {
+    		$(ed.target).textbox('setText', value);
+    	}
+    }
+}
+function onClickCell(index, field){
+	//alert('onClickCell');
+    if (editIndex != index){
+        if (endEditing()){
+            var selectedRow = itemList.datagrid('selectRow', index);
+            selectedRow.datagrid('beginEdit', index);
+            var ed = itemList.datagrid('getEditor', {index:index,field:field});
+            if (ed){
+            	($(ed.target).data('textbox') ? $(ed.target).textbox('textbox') : $(ed.target)).focus();
+            }
+            editIndex = index;
+        } else {
+        	setTimeout(function(){
+        		itemList.datagrid('selectRow', editIndex);
+            },0);
+        }
+    }
+}
+function onEndEdit(index, row){
+    var ed = $(this).datagrid('getEditor', {
+        index: index,
+        field: 'countryId'
+    });
+    row.productname = $(ed.target).combogrid('getText');
+}
+function append(){
+    if (endEditing()){
+    	itemList.datagrid('appendRow',{stateId:''});
+        editIndex = itemList.datagrid('getRows').length-1;
+        itemList.datagrid('selectRow', editIndex)
+                .datagrid('beginEdit', editIndex);
+    }
+}
+function removeit(){
+    if (editIndex == undefined){return}
+    itemList.datagrid('cancelEdit', editIndex)
+            .datagrid('deleteRow', editIndex);
+    editIndex = undefined;
+}
+function accept(){
+    if (endEditing()){
+		var rows = itemList.datagrid('getChanges'); 
+		if (rows.length){
+		    $.messager.confirm('Confirm','Are you sure you want to accept the changes?',function(r){
+		        if (r){
+
+                    var inserted = itemList.datagrid('getChanges', "inserted");
+                    var updated = itemList.datagrid('getChanges', "updated");
+                    var deleted = itemList.datagrid('getChanges', "deleted");
+                    var value = '';
+                    $.each(inserted, function(){
+                    	this.type = 'add';
+                    	value += (JSON.stringify(this));
+                    })
+                    $.each(updated, function(){
+                    	this.type = 'update';
+                    	value += (JSON.stringify(this));
+                    })
+                    $.each(deleted, function(){
+                    	this.type = 'delete';
+                    	value += (JSON.stringify(this));
+                    })
+                    itemList.datagrid('acceptChanges');
+                    //alert(value);
+                    editRecord(value);
+		        }
+		    });
+			
+		} else {
+			$.messager.alert('Info', 'No row is changed.','info');
+		}
+	}
+}
+function editRecord(data){
+	$.ajax({
+		url: '/rest/address/itemList',
+		dataType: 'text',
+		data: {data: data},
+        success: function(result){
+            var result = eval('('+result+')');
+            if (result.msg){
+                  $.messager.show({
+                      title: 'Result',
+                      msg: result.msg,
+                      timeout:0,
+                      height:'auto',
+                      width:'auto'
+                  });
+                  itemList.datagrid('reload');
+            }
+        },
+		error: function(){
+            $.messager.show({
+                title: 'Error',
+                msg: 'Error, Please contact system administration.',
+                timeout:0,
+                height:'auto',
+                width:'auto'
+            });
+		}
+	});	
+}
+function reject(){
+itemListst.datagrid('rejectChanges');
+    editIndex = undefined;
+}
+function getChanges(){
+    var rows = itemList.datagrid('getChanges');
+    alert(rows.length+' rows are changed!');
+}
+
+$(function(){
+	itemList.datagrid({
+		title:'Master Address',
+        iconCls:'icon-edit',
+        width:'1600px',
+        height:'auto',
+        singleSelect:true,
+		toolbar: '#toolbar',
+        //idField:'itemid',
+        url:'/rest/address/itemList',
+		th:url='@{~/rest/address/itemList}',
+		method: 'get',
+		pagination: true,
+	    rownumbers: true,
+	    fitColumns: true,
+	    pagePosition: 'both',
+	    remoteFilter: true,
+        columns:[[
+     		{field:'line1',title:'Line1 (Max. 100 characters)',width:'15%',
+   				editor:{
+   					type:'textbox',
+   					options:{
+   						onChange:function(param){
+   							if (param != null && param.length > 100){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,100));	
+   							}
+   						}
+   					}
+   				}
+   			},
+     		{field:'line2',title:'Line2 (Max. 100 characters)',width:'15%',
+   				editor:{
+   					type:'textbox',
+   					options:{
+   						onChange:function(param){
+   							if (param != null && param.length > 100){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,100));	
+   							}
+   						}
+   					}
+   				}
+   			},
+     		{field:'line3',title:'Line3 (Max. 100 characters)',width:'15%',
+   				editor:{
+   					type:'textbox',
+   					options:{
+   						onChange:function(param){
+   							if (param != null && param.length > 100){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,100));	
+   							}
+   						}
+   					}
+   				}
+   			},
+     		{field:'line4',title:'Line4 (Max. 100 characters)',width:'15%',
+   				editor:{
+   					type:'textbox',
+   					options:{
+   						onChange:function(param){
+   							if (param != null && param.length > 100){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,100));	
+   							}
+   						}
+   					}
+   				}
+   			},
+     		{field:'city',title:'City (Max. 100 characters)',width:'10%',
+   				editor:{
+   					type:'textbox',
+   					options:{
+   						onChange:function(param){
+   							if (param != null && param.length > 100){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,100));	
+   							}
+   						}
+   					}
+   				}
+   			}, 
+     		{field:'postalCode',title:'Postal Code (Max. 16 characters)',width:'10%',
+   				editor:{
+   					type:'textbox',
+   					options:{
+   						onChange:function(param){
+   							if (param != null && param.length > 16){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,16));	
+   							}
+   						}
+   					}
+   				}
+   			},
+			{field:'countryId',title:'Country Id',width:'9%',
+                editor:{
+                    type:'combogrid',
+                    options:{
+						delay: 500,
+						mode: 'remote',
+					    url:'/rest/country/countryLikeList',
+					    th:url='@{~/rest/country/countryLikeList}',
+					    width:100,
+					    panelWidth: 300,
+					    fitColumns: true,
+						idField: 'countryId',
+						textField: 'countryId',
+						required:true,
+						columns: [[
+				            {field:'countryId',title:'ID',width:100},
+				            {field:'name',title:'Name',width:200}
+						]],
+						onChange:function(param){
+							var g = $(this).combogrid('grid');
+							var r = g.datagrid('getSelected');
+							
+							if (r != null){
+							}
+						}
+                    }
+                }			
+			},
+     		{field:'stateId',title:'State Id (2 letters)',width:'10%',
+                editor:{
+                    type:'combogrid',
+                    options:{
+						delay: 500,
+						mode: 'remote',
+					    url:'/rest/state/stateLikeList',
+					    th:url='@{~/rest/state/stateLikeList}',
+					    queryParams:{
+					    	countryId:''
+					    },
+					    width:100,
+					    panelWidth: 300,
+					    fitColumns: true,
+						idField: 'stateId',
+						textField: 'stateId',
+						required:false,
+						columns: [[
+				            {field:'stateId',title:'ID',width:100},
+				            {field:'name',title:'Name',width:200}
+						]],
+						onChange:function(param){
+   							if (param != null && param.length > 2){
+   								$(this).textbox('setValue', $(this).textbox('getValue').substring(0,2));	
+   							}
+							
+							var g = $(this).combogrid('grid');
+							var r = g.datagrid('getSelected');
+							
+							if (r != null){
+								updateField('countryId', r.countryId, 'combogrid');
+							}
+						}
+                    }
+                }
+   			}
+        ]],
+		onClickCell: onClickCell,
+		onEndEdit: onEndEdit,
+		onClickRow:function(rowIndex){
+		},
+		onBeginEdit:function(rowIndex){
+			//alert("onBeginEdit");
+		},
+		onBeforeEdit:function(index,row){
+        },
+        onAfterEdit:function(index,row){
+        	//alert("onAfterEdit");
+        },
+        onCancelEdit:function(index,row){
+        },
+        onBeforeSelect:function(index,row){
+        	//alert("onBeforeSelect");
+        },
+        onSelect:function(index,row){
+        	//alert("onSelect");
+        }
+	});
+	itemList.datagrid('enableFilter', []);
+	$('#loginModal').modal('show');
+})
+/*]]>*/
+</script>
+</body>
+</html>
